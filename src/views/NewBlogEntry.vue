@@ -9,33 +9,48 @@
 
         <b-container>
 
-        <b-form-row>
-          <b-col sm="2">
-            <label>{{ $t('newBlockEntry.titleLabel') }}</label>
-          </b-col>
-          <b-col sm="10">
-            <b-form-input
-              id="form-input-title"
-              type="text"
-              v-model="title"
-              :placeholder="$t('newBlockEntry.titlePlaceholder')">
-            </b-form-input>
-          </b-col>
-        </b-form-row>
+          <b-row>
+            <b-col sm="2">
+              <label>{{ $t('newBlockEntry.titleLabel') }}</label>
+            </b-col>
+            <b-col sm="10">
+              <b-form-input
+                id="form-input-title"
+                type="text"
+                v-model="title"
+                :placeholder="$t('newBlockEntry.titlePlaceholder')">
+              </b-form-input>
+            </b-col>
+          </b-row>
 
-        <b-form-row class="mt-2">
-          <b-col sm="2">
-            <label>{{ $t('newBlockEntry.contentLabel') }}</label>
-          </b-col>
-          <b-col sm="10">
-            <b-form-textarea
-              id="textarea-default"
-              v-model="content"
-              :placeholder="$t('newBlockEntry.contentPlaceholder')"
-              rows="10">
-            </b-form-textarea>
-          </b-col>
-        </b-form-row>
+          <b-row class="mt-2">
+            <b-col sm="2">
+              <label>{{ $t('newBlockEntry.contentLabel') }}</label>
+            </b-col>
+            <b-col sm="10">
+              <b-form-textarea
+                id="form-input-content"
+                v-model="content"
+                :placeholder="$t('newBlockEntry.contentPlaceholder')"
+                rows="10">
+              </b-form-textarea>
+            </b-col>
+          </b-row>
+
+          <b-row class="mt-2">
+            <b-col sm="2">
+              <label>{{ $t('newBlockEntry.tagsLabel') }}</label>
+            </b-col>
+            <b-col sm="10">
+              <b-form-tags
+                id="form-input-tags"
+                v-model="tags"
+                :placeholder="$t('newBlockEntry.tagsPlaceholder')"
+                tag-variant="secondary"
+                remove-on-delete>
+              </b-form-tags>
+            </b-col>
+          </b-row>
 
         </b-container>
 
@@ -57,6 +72,7 @@ export default {
     return {
       title: '',
       content: '',
+      tags: [],
     };
   },
 
@@ -64,6 +80,7 @@ export default {
     submit() {
       console.log(this.title);
       console.log(this.content);
+      console.log(this.tags);
     },
   },
 };

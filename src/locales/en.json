@@ -6,6 +6,8 @@
     "titlePlaceholder": "Enter a title",
     "contentLabel": "Content",
     "contentPlaceholder": "Enter some content",
-    "submitBtnLabel": "Submit"
+    "submitBtnLabel": "Submit",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "Type a new tag and press enter"
   }
 }

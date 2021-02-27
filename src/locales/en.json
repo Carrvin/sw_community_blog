@@ -1,3 +1,11 @@
 {
-  "message": "hello {msg} !!"
+  "message": "hello {msg} !!",
+  "newBlockEntry": {
+    "overallTitleLabel": "New Blog Entry",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Enter a title",
+    "contentLabel": "Content",
+    "contentPlaceholder": "Enter some content",
+    "submitBtnLabel": "Submit"
+  }
 }

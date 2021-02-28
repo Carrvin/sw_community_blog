@@ -1,6 +1,6 @@
 {
   "message": "hello {msg} !!",
-  "newBlockEntry": {
+  "blogPost": {
     "overallTitleLabel": "New Blog Entry",
     "titleLabel": "Title",
     "titlePlaceholder": "Enter a title",
@@ -8,6 +8,7 @@
     "contentPlaceholder": "Enter some content",
     "submitBtnLabel": "Submit",
     "tagsLabel": "Tags",
-    "tagsPlaceholder": "Type a new tag and press enter"
+    "tagsPlaceholder": "Type a new tag and press enter",
+    "fieldValidationMessage": "Please fill out all required fields"
   }
 }

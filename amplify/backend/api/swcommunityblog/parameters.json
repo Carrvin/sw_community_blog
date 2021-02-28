@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "swcommunityblog",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authswcommunitybloge1cb5e4c",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
